@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <!--Header Section-->
+    <header>
+        <nav class="navbar">
+            <div class="logo-section">
+                <div class="logo-img">
+                    <img src="https://livedemo00.template-help.com/wt_59048_v2/images/logo.png">
+                    <p>Restaurant</p>
+                </div>
+                <div class="menu-icon menu-disp" onclick="func2()">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+            </div>
+            <div class="options-section disp">
+                <p>HOME</p>
+                <p>ABOUT US</p>
+                <p>MENU</p>
+                <p>GALLERY</p>
+                <p>
+                    EVENTS
+                </p>
+                <p>CONTACTS</p>
+                <p class="search">
+                    <input type="text" class="search-box menu1-disp">
+                    <span class="material-symbols-outlined" id="search-icon">
+                        search
+                    </span>
+                </p>
+            </div>
+        </nav>
+        <div class="center">
+            <div class="chef-icon">
+                <img src="https://livedemo00.template-help.com/wt_59048_v2/images/intro-logo-175x173.png">
+            </div>
+            <div class="res-name">
+                <p>Intense Restaurant</p>
+            </div>
+            <div class="address">
+                <span class="material-symbols-outlined">
+                    near_me
+                </span>
+                <span>4578 Marmora Road, Glasgow D04 89GR</span>
+            </div>
+            <div class="address">
+                <span class="material-symbols-outlined">
+                    schedule
+                </span>
+                <span>10:00 am - 11:00 pm</span>
+                <span class="material-symbols-outlined">
+                    call
+                </span>
+                <span> 800 23456789</span>
+            </div>
+            <div class="address">
+                <p>We introduce new cultures to visitors through cuisines of various countries, offering a special dish
+                    for</p>
+                <p>everyone regardless of their food preferences.</p>
+            </div>
+        </div>
+    </header>
+    <!--Video Welcome-->
+    <div class="intro">
+        <div class="intro-message">
+            <div class="w-message">Welcome</div>
+            <div class="w1-message">TO OUR RESTAURANT</div>
+            <div class="line"></div>
+            <div class="w2-message">
+                <p>
+                    Would you like to savor the exquisite cuisine and bring the art of dining to a new level? We obtain
+                    the freshest products from reputable purveyors and incorporate them into our exclusive dishes. Our
+                    menus are influenced by culinary traditions of Europe, Far East and other parts of the world. We are
+                    open to experiments and often add new dishes to our a la carte menu. Our courteous and attentive
+                    waiters in smoking jackets will bring you anything you wish.
+                </p>
+            </div>
+        </div>
+        <div class="intro-video">
+            <iframe width="570" height="321" src="https://www.youtube.com/embed/MG6jHxAfwQk"
+                title="Restaurant Review- Varuni Napoli | Atlanta Eats" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <!--Our Menu-->
+    <div class="our-menu">
+        <div class="item-1">Our Menu</div>
+        <div class="item-2">
+            <ul>
+                <li style="list-style-type:none;">BREAKFAST</li>
+                <li>LUNCH</li>
+                <li>DINNER</li>
+            </ul>
+        </div>
+    </div>
+    <!--Menu-->
+    <div class="menu-meals">
+        <div class="menu-meals-list">
+            <span class="funcAll">ALL</span>
+            <span class="funcBreakfast">BREAKFAST</span>
+            <span class="funcLunch">LUNCH</span>
+            <span class="funcDinner">DINNER</span>
+        </div>
+        <div class="menu-items">
+            <!-- <span class="menu-items-add">
+                <p class="menu-items-add-header">OLD TIMER'S BREAKFAST.......$22.00</p>
+                <p class="menu-items-add-description">( Two eggs cooked to order with grits, sawmill gravy, homemade buttermilk biscuits & real butter )</p>
+            </span> -->
+        </div>
+    </div>
+    <!--Our Gallery-->
+    <div class="our-gallery">
+        <div class="gallery-item-1">Our Gallery</div>
+        <div class="gallery-item-2">
+            CHECKOUT OUR SPACE
+        </div>
+    </div>
+    <!--gallery images-->
+
+    <div class="img-container-pop display-box">
+        <div class="cross-icon-box">
+            <span class="cross-icon" onclick="closeImg()">X</span>
+        </div>
+        <div class="image-box">
+            <img src="https://livedemo00.template-help.com/wt_59048_v2/images/gallery-01-285x285.jpg" alt=""
+                class="image-box-img">
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="col">
+            <div>
+                <img src="https://livedemo00.template-help.com/wt_59048_v2/images/gallery-01-285x285.jpg" class="img-4"
+                    onclick="openImg(this.src)">
+                <img src="https://livedemo00.template-help.com/wt_59048_v2/images/gallery-02-285x285.jpg" class="img-4"
+                    onclick="openImg(this.src)">
+            </div>
+            <div>
+                <img src="https://livedemo00.template-help.com/wt_59048_v2/images/gallery-05-600x600.jpg" class="img-1"
+                    onclick="openImg(this.src)">
+            </div>
+        </div>
+        <div class="col">
+            <div>
+                <img src="https://livedemo00.template-help.com/wt_59048_v2/images/gallery-03-601x442.jpg" class="img-2"
+                    onclick="openImg(this.src)">
+            </div>
+            <div>
+                <img src="https://livedemo00.template-help.com/wt_59048_v2/images/gallery-06-285x443.jpg" class="img-5"
+                    onclick="openImg(this.src)">
+                <img src="https://livedemo00.template-help.com/wt_59048_v2/images/gallery-07-285x443.jpg" class="img-5"
+                    onclick="openImg(this.src)">
+            </div>
+        </div>
+        <div class="col">
+            <div>
+                <img src="https://livedemo00.template-help.com/wt_59048_v2/images/gallery-04-600x600.jpg" class="img-3"
+                    onclick="openImg(this.src)">
+            </div>
+            <div>
+                <img src="https://livedemo00.template-help.com/wt_59048_v2/images/gallery-08-285x285.jpg" class="img-6"
+                    onclick="openImg(this.src)">
+                <img src="https://livedemo00.template-help.com/wt_59048_v2/images/gallery-09-285x285.jpg" class="img-6"
+                    onclick="openImg(this.src)">
+            </div>
+        </div>
+    </div>
+
+    <!--Events-->
+
+    <div class="events">
+        <div class="events-p">
+            <p class="event-p-1">Upcoming Events</p>
+            <p class="event-p-2">JOIN US FOR SOMETHING SPECIAL</p>
+            <p class="event-p-3"></p>
+        </div>
+        <div class="events-details">
+            <div class="events-details-part-1">
+                <img src="https://livedemo00.template-help.com/wt_59048_v2/images/post-01-553x320.jpg">
+                <div class="e1">
+                    <span class="material-symbols-outlined">
+                        event
+                    </span>
+                    <span>March 8 2018</span>
+                    <span class="material-symbols-outlined">
+                        schedule
+                    </span>
+                    <span>8:00 AM</span>
+                </div>
+                <div class="e2">
+                    EVENT IMAGE POST EXAMPLE
+                </div>
+                <p class="e3">
+                    Celebrate this year's Lovers Day by visiting our cozy, romantic Restaurant! Each year we are
+                    introducing some themed party for this occasion... This time the Valentine's Day will be set amid
+                    Parisian decor.
+                </p>
+                <div class="e4">
+                    <input type="button" value="READ MORE" class="butn">
+                </div>
+            </div>
+            <div  class="events-details-part-2">
+                <div class="x1">
+                    <span class="material-symbols-outlined">
+                        event
+                    </span>
+                    <span>March 12 2018</span>
+                    <span class="material-symbols-outlined">
+                        schedule
+                    </span>
+                    <span>8:00 AM</span>
+                </div>
+                <div class="x1-1">
+                    ORANGE, MEATY AND TASTY!
+                </div>
+                <div class="x1">
+                    <span class="material-symbols-outlined">
+                        event
+                    </span>
+                    <span>March 14 2018</span>
+                    <span class="material-symbols-outlined">
+                        schedule
+                    </span>
+                    <span>17:00 AM</span>
+                </div>
+                <div class="x1-1">
+                    NEW RESTAURANT OPENS IN NEW YORK
+                </div>
+                <div class="x1">
+                    <span class="material-symbols-outlined">
+                        event
+                    </span>
+                    <span>March 18 2018</span>
+                    <span class="material-symbols-outlined">
+                        schedule
+                    </span>
+                    <span>18:00 AM</span>
+                </div>
+                <div class="x1-1">
+                    PERFECT MOTHER'S DAY GIFT
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
