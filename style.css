@@ -525,4 +525,7 @@ nav {
         font-size: 20px;
         text-align: center;
     }
+    .display-box{
+        display: none;
+    }
 }
