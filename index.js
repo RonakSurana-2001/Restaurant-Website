@@ -1,3 +1,14 @@
+
+// preloader
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", function () {
+  preloader.classList.add("hide-preloader");
+});
+
+
+
+
 let options = document.querySelector('.options-section');
 let srch = document.querySelector('#search-icon');
 let srchBox = document.querySelector('.search-box');
