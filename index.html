@@ -29,14 +29,12 @@
                 </div>
             </div>
             <div class="options-section disp">
-                <p>HOME</p>
-                <p>ABOUT US</p>
-                <p>MENU</p>
-                <p>GALLERY</p>
-                <p>
-                    EVENTS
-                </p>
-                <p>CONTACTS</p>
+                <a href="#home"><p>HOME</p></a>
+                <a href="#aboutus"><p>ABOUT US</p></a>
+                <a href="#menuNav"><p>MENU</p></a>
+                <a href="#galleryNavi"><p>GALLERY</p></a>
+                <a href="#eventsNavi"><p>EVENTS</p></a>
+                <a href="#contactNavi"><p>CONTACTS</p></a>
                 <p class="search">
                     <input type="text" class="search-box menu1-disp">
                     <span class="material-symbols-outlined" id="search-icon">
@@ -45,7 +43,7 @@
                 </p>
             </div>
         </nav>
-        <div class="center">
+        <div class="center" id="home">
             <div class="chef-icon">
                 <img src="https://livedemo00.template-help.com/wt_59048_v2/images/intro-logo-175x173.png">
             </div>
@@ -76,7 +74,7 @@
         </div>
     </header>
     <!--Video Welcome-->
-    <div class="intro">
+    <div class="intro" id="aboutus">
         <div class="intro-message">
             <div class="w-message">Welcome</div>
             <div class="w1-message">TO OUR RESTAURANT</div>
@@ -99,7 +97,7 @@
         </div>
     </div>
     <!--Our Menu-->
-    <div class="our-menu">
+    <div class="our-menu" id="menuNav">
         <div class="item-1">Our Menu</div>
         <div class="item-2">
             <ul>
@@ -125,7 +123,7 @@
         </div>
     </div>
     <!--Our Gallery-->
-    <div class="our-gallery">
+    <div class="our-gallery" id="galleryNavi">
         <div class="gallery-item-1">Our Gallery</div>
         <div class="gallery-item-2">
             CHECKOUT OUR SPACE
@@ -184,7 +182,7 @@
 
     <!--Events-->
 
-    <div class="events">
+    <div class="events" id="eventsNavi">
         <div class="events-p">
             <p class="event-p-1">Upcoming Events</p>
             <p class="event-p-2">JOIN US FOR SOMETHING SPECIAL</p>
@@ -215,7 +213,7 @@
                     <input type="button" value="READ MORE" class="butn">
                 </div>
             </div>
-            <div  class="events-details-part-2">
+            <div class="events-details-part-2">
                 <div class="x1">
                     <span class="material-symbols-outlined">
                         event
@@ -257,6 +255,63 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer" id="contactNavi">
+        <div class="section-1">
+            <img src="https://livedemo00.template-help.com/wt_59048_v2/images/logo.png">
+            <div>Get the best dining experience</div>
+            <div class="section-11">
+                <div>Address:</div>
+                <div>
+                    <p>28 Jackson Blvd Ste</p>
+                    <p>1020 Chicago</p>
+                    <p>IL 60604-2340.</p>
+                </div>
+                <div id="telephone">
+                    <span>Telephone:</span>
+                    <a href="tel:+1 800 559 6580">+1 800 559 6580</a>
+                </div>
+                <div id="email">
+                    <span>E-mail:</span>
+                    <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-2">
+            <p>WHAT PEOPLE SAY</p>
+            <div class="section-21">
+                <!-- "This is one of the best restaurants I have visited. Everything was excellent. The food was served in a very creative way. Would recommend to all." -->
+            </div>
+            <div class="section-22"><!--ALEX MERPHY*/--></div>
+
+            <div class="icons">
+                <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Facebook_svg-512.png"></a>
+                <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Twitter5_svg-512.png"></a>
+                <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Whatsapp_svg2-512.png"></a>
+                <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Youtube_svg-512.png"></a>
+            </div>
+        </div>
+        <div class="section-3">
+            <div class="section-31">CONTACT US</div>
+            <div class="section-32">
+                <p>Name:</p>
+                <input type="text">
+            </div>
+            <div class="section-32">
+                <p>Your Email:</p>
+                <input type="email">
+            </div>
+            <div class="section-32">
+                <p>Message:</p>
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <div>
+                <input type="button" value="Submit" class="section-33">
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        Intense Restaurant © 2022 . <a href="#">Privacy Policy</a>
     </div>
 </body>
 <script src="index.js"></script>

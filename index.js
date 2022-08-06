@@ -70,7 +70,7 @@ let dinner = document.querySelector('.funcDinner');
 let list;
 
 
-window.addEventListener('DOMContentLoaded',funcall);
+window.addEventListener('DOMContentLoaded', funcall);
 
 all.addEventListener('click', funcall);
 breakFast.addEventListener('click', funcbreak);
@@ -89,7 +89,7 @@ function funcall() {
     // console.log("HYY");
 }
 function funcbreak() {
-    list="";
+    list = "";
     menu.forEach((menu) => {
         if (menu.meal == 'BREAKFAST') {
             list += `<span class="menu-items-add">
@@ -102,7 +102,7 @@ function funcbreak() {
     // console.log("HYY");
 }
 function funclunch() {
-    list="";
+    list = "";
     menu.forEach((menu) => {
         if (menu.meal == 'LUNCH') {
             list += `<span class="menu-items-add">
@@ -115,7 +115,7 @@ function funclunch() {
     // console.log("HYY");
 }
 function funcdinner() {
-    list="";
+    list = "";
     menu.forEach((menu) => {
         if (menu.meal == 'DINNER') {
             list += `<span class="menu-items-add">
@@ -128,17 +128,48 @@ function funcdinner() {
     // console.log("HYY");
 }
 
-let imageContainer=document.querySelector('.img-container-pop');
-let image=document.querySelector('.image-box-img');
-let gal=document.querySelector('.gallery');
-function openImg(pic)
-{
+let imageContainer = document.querySelector('.img-container-pop');
+let image = document.querySelector('.image-box-img');
+let gal = document.querySelector('.gallery');
+function openImg(pic) {
     imageContainer.classList.remove('display-box');
     gal.classList.add('display-box');
-    image.src=pic;
+    image.src = pic;
 }
-function closeImg()
-{
+function closeImg() {
     imageContainer.classList.add('display-box');
     gal.classList.remove('display-box');
 }
+
+
+let reviews = [
+    {
+        name: "- ALEX MERPHY",
+        description: "This is one of the best restaurants I have visited. Everything was excellent. The food was served in a very creative way. Would recommend to all."
+    },
+    {
+        name: "- JULY MAO",
+        description: "Your Restaurant is the best family place for me. It is already a tradition for us to visit this place every Friday evening. I really enjoy everything."
+    },
+    {
+        name: "- JOHN DOE",
+        description: "This is where I go every time I feel overwhelmed with nostalgia or just want to taste the real pasta one more time. Highly recommend"
+    }
+]
+
+let sec1 = document.querySelector('.section-21');
+let sec2 = document.querySelector('.section-22');
+
+let k=0;
+function funcReviews() {
+    if(k>2)
+    {
+        k=0;
+    }
+    sec1.innerText = reviews[k].description;
+    sec2.innerText = reviews[k].name;
+    k++;
+    console.log(k);
+    setTimeout(funcReviews,3000);
+}
+funcReviews();

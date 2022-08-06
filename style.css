@@ -48,6 +48,10 @@ nav {
 .options-section p {
     padding: 12px;
 }
+.options-section a{
+    text-decoration: none;
+    color: white;
+}
 .options-section p:hover{
     text-decoration: underline;
     text-decoration-color: orangered;
@@ -167,6 +171,10 @@ nav {
     padding:15px;
     font-size: 25px;
 }
+.menu-meals-list span:hover{
+    cursor: pointer;
+    color: blueviolet;
+}
 
 .menu-items-list{
     display: flex;
@@ -240,8 +248,10 @@ nav {
     width:200px;
     height:208px;
 }
-
-
+.col div img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
 /*-----------*/
 
 .display-box{
@@ -340,6 +350,7 @@ nav {
     background-color:orangered;
     border: none;
     color: white;
+    cursor: pointer;
 }
 .events-details-part-2{
     /* background-color: black; */
@@ -357,6 +368,111 @@ nav {
 .x1-1{
     font-size: 40px;
     text-align: center;
+}
+.footer{
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-direction: row;
+}
+.section-1{
+    width: 30%;
+    background-color: gray;
+    /* padding: 80px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.section-2{
+    width:35%;
+    background-color: blue;
+    padding: 40px;
+    align-items: center;
+}
+.section-2 p{
+    font-size: 25px;
+}
+.section-21{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.section-22{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.icons{
+    padding: 20px;
+}
+.icons img{
+    /* padding:20px; */
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.section-3{
+    width:35%;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.section-31{
+    color: white;
+    font-size: 45px;
+}
+.section-32{
+    /* border: 1px solid white; */
+    width:60%;
+    margin-top: 10px;
+}
+.section-32 p{
+    font-size: 20px;
+}
+.section-32 input{
+    border: none;
+    width: 100%;
+    height:25px;
+}
+.section-32 textarea{
+    border: none;
+    width: 100%;
+    height:45px;
+}
+.section-33{
+    width:75px;
+    padding: 6px;
+    font-size: larger;
+}
+.copyright{
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    padding: 15px;
+}
+.copyright a{
+    text-decoration: none;
+    color:black;
+}
+.copyright a:hover{
+    text-decoration: underline;
+}
+#telephone a{
+    text-decoration: none;
+    color: black;
+}
+#email a{
+    text-decoration: none;
+    color: black;
+}
+#telephone a:hover,#email a:hover{
+    text-decoration: underline;
 }
 @media (max-width:1000px){
     header {
@@ -527,5 +643,35 @@ nav {
     }
     .display-box{
         display: none;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-1{
+        width: 100%;
+        order:1;
+        padding: 15px;
+    }
+    .section-2{
+        width: 100%;
+        order:2;
+        padding: 25px;
+    }
+    .section-3{
+        width: 100%;
+        padding: 25px;
+    }
+    .section-31{
+        font-size: 20px;
+    }
+    .copyright{
+        background-color: burlywood;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        padding: 15px;
     }
 }
